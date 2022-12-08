@@ -12,6 +12,7 @@
   </header>
   <section class="e-content post-body">
       {{ .Content }}
+      <p>{{ partial "conversation-link.html" . }}</p>
   </section>
 
   {{ if .Site.Params.include_conversation }}
