@@ -7,7 +7,7 @@
 		{{ if .Page.Params.redirect }}
 			<a href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
 		{{ else }}
-			<a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
+			<a {{ if eq .Name "About" }} class="cta" {{ end }} href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
 		{{ end }}
 	{{ end }}
 </nav>
