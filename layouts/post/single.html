@@ -12,7 +12,7 @@
   </header>
   <section class="e-content post-body">
       {{ .Content }}
-      <p>{{ partial "conversation-link.html" . }}</p>
+      <p><i class="fa-regular fa-comments"></i> {{ partial "conversation-link.html" . }}</p>
   </section>
 
   {{ if .Site.Params.include_conversation }}
