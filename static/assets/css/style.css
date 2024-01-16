@@ -19,8 +19,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* Spacing */
-.highlight, .post h1, h2, h3, p, .post-body ul, .dates, .post-body li, .bio li, video, pre ::before {
+.highlight, .post h1, h2, h3, p, .dates, video, pre ::before {
 	margin-top: 1em;
+}
+
+.post-body ul, .post-body li, .bio li {
+	margin-top: 0.2em;
 }
 
 /* Base */
@@ -178,8 +182,12 @@ li	{ list-style-type:circle; list-style-position:inside;}
 
 /* Post */
 
+.post-body li:first-child {
+	margin-top: 1em;
+}
+
 .post-body li:last-child {
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 }
 
 article ol li {
